@@ -1,13 +1,13 @@
 # Indian Banking Financial & Risk Analysis (FY2021–FY2025)
 
-## 📌 Project Overview
+## Project Overview
 An end-to-end financial performance, econometric validation, and credit risk assessment project evaluating the 5-year trajectory (**FY2021–FY2025**) of five major Indian banks: **State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, and Bank of Baroda**[cite: 2, 12].
 
 The workflow integrates exploratory data analysis, financial ratio engineering, OLS regression diagnostics, and multi-factor risk scoring in **Python**, relational storage in **SQLite**, and interactive executive reporting in **Microsoft Power BI**[cite: 1, 2, 3, 12].
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 * **`Project_1_Banking_Data.xlsx`** – Raw 5-year financial dataset (FY2021–FY2025) covering Deposits, Advances, Total Assets, Net Profit, ROA, ROE, GNPA, NNPA, CAR, NIM, Provision Coverage Ratio, and Cost/Income Ratio[cite: 2, 11].
 * **`Project_1_Banking_Analysis.ipynb`** – Complete Jupyter Notebook containing EDA, YoY growth trends, correlation analysis, OLS regression diagnostics (VIF, Breusch-Pagan, Jarque-Bera, Durbin-Watson), composite risk scoring, and 20 visualizations[cite: 2, 11, 12, 13].
 * **`final_banking_dataset.csv` & `banking_analysis.xlsx`** – Processed datasets enriched with engineered financial ratios, period-over-period changes, and risk metrics[cite: 11].
@@ -17,7 +17,7 @@ The workflow integrates exploratory data analysis, financial ratio engineering, 
 
 ---
 
-## 📈 All 20 Visuals & Charts
+##  All 20 Visuals & Charts
 
 ### Part 1: Initial Trend Exploration (Step 9)
 | SBI Net Profit Trend | Net Profit Comparison |
@@ -75,7 +75,7 @@ The workflow integrates exploratory data analysis, financial ratio engineering, 
 
 ---
 
-## 📊 Financial & Risk Framework
+##  Financial & Risk Framework
 * **Growth & Scale Metrics:** Year-over-Year (YoY) and 5-year cumulative growth across Net Profit, Deposits, Advances, and Total Assets[cite: 2].
 * **Profitability & Efficiency:** Return on Assets (ROA), Return on Equity (ROE), Net Interest Margin (NIM), Cost-to-Income Ratio, and Profit-to-Advances Ratio[cite: 2].
 * **Liquidity & Solvency:** Advances-to-Deposits Ratio (CDR) and Capital Adequacy Ratio (CAR)[cite: 2].
@@ -84,6 +84,6 @@ The workflow integrates exploratory data analysis, financial ratio engineering, 
 
 ---
 
-## 🔍 Key Analytical Insights (FY2021–FY2025)
+##  Key Analytical Insights (FY2021–FY2025)
 1. **Sector-Wide Asset Quality Turnaround:** All five banks substantially reduced Gross NPAs over the 5-year period[cite: 2]. **Bank of Baroda** recorded the sharpest turnaround, lowering GNPA by **6.07 percentage points** (from **8.87%** in FY2021 to **2.80%** in FY2025)[cite: 2].
 2. **Profitability Leaders:** **ICICI Bank** achieved the highest 5-year average ROA (**2.00%**) and ROE (**16.26%**), scaling Net Profit by **236.3%** (from ₹16,193 Cr to ₹54,449 Cr)[cite: 2]
