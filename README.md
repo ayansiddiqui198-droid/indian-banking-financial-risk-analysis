@@ -9,15 +9,15 @@ The workflow integrates exploratory data analysis, financial ratio engineering, 
 
 ## 📂 Repository Structure
 * **`Project_1_Banking_Data.xlsx`** – Raw 5-year financial dataset (FY2021–FY2025) covering Deposits, Advances, Total Assets, Net Profit, ROA, ROE, GNPA, NNPA, CAR, NIM, Provision Coverage Ratio, and Cost/Income Ratio[cite: 2, 11].
-* **`Project_1_Banking_Analysis.ipynb`** – Complete Jupyter Notebook containing EDA, YoY growth trends, correlation analysis, OLS regression diagnostics (VIF, Breusch-Pagan, Jarque-Bera, Durbin-Watson), composite risk scoring, and 18 visualizations.
+* **`Project_1_Banking_Analysis.ipynb`** – Complete Jupyter Notebook containing EDA, YoY growth trends, correlation analysis, OLS regression diagnostics (VIF, Breusch-Pagan, Jarque-Bera, Durbin-Watson), composite risk scoring, and 20 visualizations[cite: 2, 11, 12, 13].
 * **`final_banking_dataset.csv` & `banking_analysis.xlsx`** – Processed datasets enriched with engineered financial ratios, period-over-period changes, and risk metrics[cite: 11].
 * **`project_1_banking.db`** – SQLite database (`bank_data` table) storing the final scored dataset (`GNPA_Risk`, `NNPA_Risk`, `ROA_Risk`, `CAR_Risk`, and `Risk_Score`)[cite: 1, 11].
-* **`Banking_Analysis_Dashboard.pbix`** – Interactive 4-page Power BI executive dashboard for visual benchmarking across banks and financial years.
-* **`images/`** – Folder containing all **18 exported Matplotlib plots** covering growth trajectories, asset quality, capital adequacy, OLS residual diagnostics, and banking risk scorecards[cite: 12].
+* **`Banking_Analysis_Dashboard.pbix`** – Interactive 4-page Power BI executive dashboard for visual benchmarking across banks and financial years[cite: 3, 11].
+* **`images/`** – Folder containing all **20 exported Matplotlib plots** covering growth trajectories, asset quality, capital adequacy, OLS residual diagnostics, and banking risk scorecards[cite: 13].
 
 ---
 
-## 📈 All 18 Visuals & Charts
+## 📈 All 20 Visuals & Charts
 
 ### Part 1: Initial Trend Exploration (Step 9)
 | SBI Net Profit Trend | Net Profit Comparison |
@@ -65,9 +65,13 @@ The workflow integrates exploratory data analysis, financial ratio engineering, 
 | :---: | :---: |
 | ![Average Risk Score](images/chart_16_cell19.png) | ![Advances to Deposits Ratio](images/chart_17_cell19.png) |
 
-| GNPA (%) vs. ROA (%) Correlation |
+| GNPA (%) vs. ROA (%) Correlation | SBI Net Profit Summary |
+| :---: | :---: |
+| ![Final GNPA vs ROA](images/chart_18_cell19.png) | ![SBI Net Profit Summary](images/chart_19_cell23.png) |
+
+| All Banks Net Profit Summary |
 | :---: |
-| ![Final GNPA vs ROA](images/chart_18_cell19.png) |
+| ![All Banks Net Profit Summary](images/chart_20_cell23.png) |
 
 ---
 
@@ -82,21 +86,4 @@ The workflow integrates exploratory data analysis, financial ratio engineering, 
 
 ## 🔍 Key Analytical Insights (FY2021–FY2025)
 1. **Sector-Wide Asset Quality Turnaround:** All five banks substantially reduced Gross NPAs over the 5-year period[cite: 2]. **Bank of Baroda** recorded the sharpest turnaround, lowering GNPA by **6.07 percentage points** (from **8.87%** in FY2021 to **2.80%** in FY2025)[cite: 2].
-2. **Profitability Leaders:** **ICICI Bank** achieved the highest 5-year average ROA (**2.00%**) and ROE (**16.26%**), scaling Net Profit by **236.3%** (from ₹16,193 Cr to ₹54,449 Cr)[cite: 2].
-3. **Scale vs. Expansion:** **SBI** maintained the largest balance sheet (**₹66.76 Lakh Cr** in Total Assets in FY2025) with **247.4%** net profit growth, while **HDFC Bank** recorded the fastest cumulative expansion in Advances (**+148.9%**) and Deposits (**+103.0%**)[cite: 2].
-4. **Asset Quality Drives Profitability:** A strong inverse correlation (**-0.71**) between GNPA and ROA confirms that balance sheet cleanup directly fueled sector-wide return recovery[cite: 2].
-
----
-
-## 🛠️ Tech Stack
-* **Python:** `pandas`, `matplotlib`, `numpy`, `statsmodels`, `openpyxl`, `sqlite3`[cite: 12]
-* **Database:** SQLite (`project_1_banking.db`)[cite: 1, 11]
-* **Business Intelligence:** Microsoft Power BI (`Banking_Analysis_Dashboard.pbix`)[cite: 3, 11]
-* **Environment:** Jupyter Notebook[cite: 2]
-
----
-
-## 🚀 How to Use This Project
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/indian-banking-financial-risk-analysis.git](https://github.com/YOUR_USERNAME/indian-banking-financial-risk-analysis.git)
+2. **Profitability Leaders:** **ICICI Bank** achieved the highest 5-year average ROA (**2.00%**) and ROE (**16.26%**), scaling Net Profit by **236.3%** (from ₹16,193 Cr to ₹54,449 Cr)[cite: 2]
